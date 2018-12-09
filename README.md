@@ -47,5 +47,5 @@ or like this
 
 The package implements the following methods:
 
-`addToBlackList(string $email)` `checkEmailInBlackList(string $email)` `removeFromBlackList($email->email)`
+`addToBlackList(string $email)` `checkEmailInBlackList(string $email)` `removeFromBlackList(string $email)`
 
