@@ -1,0 +1,39 @@
+{
+  "name": "greenplugin/email-black-list",
+  "description": "black list for emails",
+  "type": "laravel-package",
+  "license": "mit",
+  "authors": [
+    {
+      "name": "greenplugin",
+      "email": "wformps@gmail.com"
+    }
+  ],
+  "require": {
+    "illuminate/support": "~5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~7.0",
+    "mockery/mockery": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Greenplugin\\EmailBlackList\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Greenplugin\\EmailBlackList\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Greenplugin\\EmailBlackList\\EmailBlackListServiceProvider"
+      ],
+      "aliases": {
+        "EmailBlackList": "Greenplugin\\EmailBlackList\\Facades\\EmailBlackList"
+      }
+    }
+  }
+}
